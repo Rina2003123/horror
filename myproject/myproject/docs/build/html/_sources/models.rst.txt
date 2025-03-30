@@ -1,0 +1,9 @@
+.. _models:
+
+Модели
+======
+
+.. automodule:: myapp.models
+   :members:
+   :undoc-members:
+   :show-inheritance:

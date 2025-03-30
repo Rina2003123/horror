@@ -1,0 +1,5 @@
+site_name: MyProject Documentation
+nav:
+  - Главная: index.md
+  - Модели: models.md
+  - API: api.md

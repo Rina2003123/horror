@@ -1,0 +1,14 @@
+services:
+  django:
+    build: 
+      context: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - /workspaces/pipa/myproject:/app
+    environment:
+      - SECRET_KEY=django-insecure-^wzac=orxp#75_)m@!f6i97f)t_rdo4m9e2dt3l-iumhg$$hn#z
+      - DEBUG=1
+    command: >
+      sh -c "python manage.py migrate &&
+             python manage.py runserver 0.0.0.0:8000"
